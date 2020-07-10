@@ -3,9 +3,39 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{AC58FB43-923E-4E8C-9BD9-F428061B3F65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Application", "02 - Application", "{2A1FCBC0-5564-4D80-AE0A-DDE5C0C2B209}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Domain", "03 - Domain", "{809BDB69-2D52-41B3-A5CB-576CE40D39DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Infrastructure", "04 - Infrastructure", "{782ACC9C-DD30-44AF-B04C-EB91CD88C71C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademiaFit.Domain", "src\AcademiaFit.Domain\AcademiaFit.Domain.csproj", "{90D374D1-AE79-4CF7-B660-3B0F70917DA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademiaFit.Domain.Services", "src\AcademiaFit.Domain.Services\AcademiaFit.Domain.Services.csproj", "{22961A38-F058-47FC-89E3-3CB4CC22D8B5}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90D374D1-AE79-4CF7-B660-3B0F70917DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90D374D1-AE79-4CF7-B660-3B0F70917DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90D374D1-AE79-4CF7-B660-3B0F70917DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90D374D1-AE79-4CF7-B660-3B0F70917DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22961A38-F058-47FC-89E3-3CB4CC22D8B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22961A38-F058-47FC-89E3-3CB4CC22D8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22961A38-F058-47FC-89E3-3CB4CC22D8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22961A38-F058-47FC-89E3-3CB4CC22D8B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{90D374D1-AE79-4CF7-B660-3B0F70917DA3} = {809BDB69-2D52-41B3-A5CB-576CE40D39DE}
+		{22961A38-F058-47FC-89E3-3CB4CC22D8B5} = {809BDB69-2D52-41B3-A5CB-576CE40D39DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FDFFF816-0DB9-4815-AA19-BD4E9BB5DCEF}
