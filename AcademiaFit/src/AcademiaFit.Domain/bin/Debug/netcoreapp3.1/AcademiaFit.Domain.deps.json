@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "AcademiaFit.Domain/1.0.0": {
+        "runtime": {
+          "AcademiaFit.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AcademiaFit.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

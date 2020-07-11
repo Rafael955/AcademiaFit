@@ -7,5 +7,8 @@ namespace AcademiaFit.Domain.Models.Aggregates.SerieAggregate
 {
     public class Serie : Entidade
     {
+        public Professor ProfessorResponsavel { get; set; }
+        public Aluno Aluno { get; set; }
+        public ICollection<ItemSerie> ListaDeExercicios { get; set; }
     }
 }

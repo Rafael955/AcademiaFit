@@ -1,12 +1,12 @@
-﻿using System;
+﻿using AcademiaFit.Domain.Models.Entity;
+using AcademiaFit.Domain.ValueObjects;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using AcademiaFit.Domain.Models.Entity;
-using AcademiaFit.Domain.ValueObjects;
 
 namespace AcademiaFit.Domain.Models
 {
-    public class Nutricionista : Entidade
+    public class Recepcionista : Entidade
     {
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
@@ -16,6 +16,5 @@ namespace AcademiaFit.Domain.Models
         public Email Email { get; set; }
         public Endereco Endereco { get; set; }
         public CPF CPF { get; set; }
-        public CRN CRN { get; set; }
     }
 }

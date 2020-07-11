@@ -1,16 +1,22 @@
-﻿using System;
+﻿using Flunt.Notifications;
+using Flunt.Validations;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace AcademiaFit.Domain.ValueObjects
 {
-    public struct CNPJ
+    public class CNPJ : Notifiable
     {
-        public int Numero { get; set; }
-
-        public bool ValidaCNPJ()
+        public CNPJ(string numero)
         {
-            return true;
+            Numero = numero;
+
+            AddNotifications(new Contract()
+                .Requires()
+                .HasMaxLen(Numero, 14, "CNPJ.Numero", "CNPJ Inválido"));
         }
+
+        public string Numero { get; private set; }
     }
 }

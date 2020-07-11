@@ -4,11 +4,11 @@ using System.Text;
 
 namespace AcademiaFit.Domain.ValueObjects
 {
-    public class CRN
+    public class UF
     {
-        public int Numero { get; set; }
+        public string UnidadeFederativa { get; set; }
 
-        public bool ValidaCRN()
+        private bool ValidaUF()
         {
             return true;
         }

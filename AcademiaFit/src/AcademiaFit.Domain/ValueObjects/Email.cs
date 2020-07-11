@@ -6,17 +6,17 @@ using System.Text;
 
 namespace AcademiaFit.Domain.ValueObjects
 {
-    public class CPF : Notifiable
+    public class Email : Notifiable
     {
-        public CPF(string numero)
+        public Email(string endereco)
         {
-            Numero = numero;
+            Endereco = endereco;
 
             AddNotifications(new Contract()
                 .Requires()
-                .HasMaxLen(Numero, 14, "CPF.Numero", "CPF Inválido"));
+                .IsEmail(endereco, "Email.Endereco", "E-mail inválido"));
         }
 
-        public string Numero { get; private set; }
+        public string Endereco { get; private set; }
     }
 }

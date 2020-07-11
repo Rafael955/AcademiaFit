@@ -1,16 +1,22 @@
-﻿using System;
+﻿using Flunt.Notifications;
+using Flunt.Validations;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace AcademiaFit.Domain.ValueObjects
 {
-    public struct CREF 
+    public class CREF : Notifiable
     {
-        public int Numero { get; set; }
-
-        public bool ValidaCREF()
+        public CREF(string codigo)
         {
-            return true;
+            Codigo = codigo;
+
+            AddNotifications(new Contract()
+                .Requires()
+                .HasMaxLen(Codigo, 11, "Codigo", "CREF Inválido"));
         }
+
+        public string Codigo { get; private set; }
     }
 }

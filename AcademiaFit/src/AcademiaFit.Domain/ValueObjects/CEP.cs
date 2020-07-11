@@ -1,16 +1,22 @@
-﻿using System;
+﻿using Flunt.Notifications;
+using Flunt.Validations;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace AcademiaFit.Domain.ValueObjects
 {
-    public struct CEP
+    public class CEP : Notifiable 
     {
-        public int Numero { get; set; }
-
-        public bool ValidaCEP()
+        public CEP(string numero)
         {
-            return true;
+            Numero = numero;
+
+            AddNotifications(new Contract()
+                .Requires()
+                .HasMaxLen(Numero, 8, "CEP.Numero", "CEP Inválido"));
         }
+
+        public string Numero { get; private set; }
     }
 }
