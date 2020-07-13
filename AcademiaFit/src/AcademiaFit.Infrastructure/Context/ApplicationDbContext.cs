@@ -2,10 +2,7 @@
 using AcademiaFit.Domain.Models.Aggregates;
 using AcademiaFit.Domain.Models.Aggregates.SerieAggregate;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Reflection;
-using System.Text;
 
 namespace AcademiaFit.Infrastructure.Context
 {
@@ -27,17 +24,13 @@ namespace AcademiaFit.Infrastructure.Context
         public DbSet<Serie> Series { get; set; }
         public DbSet<ItemSerie> ItensSeries { get; set; }
         public DbSet<Exercicio> Exercicios { get; set; }
+        public DbSet<Endereco> Enderecos { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    //modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
-            base.OnModelCreating(modelBuilder);
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\\mssqllocaldb;Database=AcademiaFit;Trusted_Connection=True;MultipleActiveResultSets=true");
-        }
+        //    base.OnModelCreating(modelBuilder);
+        //}
     }
 }

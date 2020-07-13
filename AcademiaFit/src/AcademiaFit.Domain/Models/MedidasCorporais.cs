@@ -1,6 +1,8 @@
 ﻿using AcademiaFit.Domain.Models.Entity;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace AcademiaFit.Domain.Models.Aggregates
@@ -18,24 +20,31 @@ namespace AcademiaFit.Domain.Models.Aggregates
         public double PercentualGordura { get; set; }
 
         #region Perimetros Corporais
-        public decimal BracoEsquerdo { get; set; }
-        public decimal BracoDireito { get; set; }
-        public decimal AntebracoEsquerdo { get; set; }
-        public decimal AntebracoDireito { get; set; }
-        public decimal Torax { get; set; }
-        public decimal Cintura { get; set; }
-        public decimal Ombros { get; set; }
-        public decimal CoxaEsquerda { get; set; }
-        public decimal CoxaDireita { get; set; }
-        public decimal PernaEsquerda { get; set; }
-        public decimal PernaDireita { get; set; }
+        public double BracoEsquerdo { get; set; }
+        public double BracoDireito { get; set; }
+        public double AntebracoEsquerdo { get; set; }
+        public double AntebracoDireito { get; set; }
+        public double Torax { get; set; }
+        public double Cintura { get; set; }
+        public double Ombros { get; set; }
+        public double CoxaEsquerda { get; set; }
+        public double CoxaDireita { get; set; }
+        public double PernaEsquerda { get; set; }
+        public double PernaDireita { get; set; }
         #endregion
 
         #region Entity Framework Relationships
+
+        [Required]
         public Guid AlunoId { get; set; }
+
+        [ForeignKey("AlunoId")]
         public Aluno Aluno { get; set; }
 
+        [Required]
         public Guid AvaliacaoFisicaId { get; set; }
+
+        [ForeignKey("AvaliacaoFisicaId")]
         public AvaliacaoFisica AvaliacaoFisica { get; set; }
         #endregion
 

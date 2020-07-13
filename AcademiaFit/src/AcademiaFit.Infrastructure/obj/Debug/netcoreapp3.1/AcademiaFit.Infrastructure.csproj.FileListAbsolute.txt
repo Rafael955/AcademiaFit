@@ -7,3 +7,9 @@ C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\bin
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.runtimeconfig.dev.json
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.genruntimeconfig.cache
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\bin\Debug\netcoreapp3.1\AcademiaFit.Domain.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\bin\Debug\netcoreapp3.1\AcademiaFit.Domain.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.csproj.CopyComplete
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.csproj.CoreCompileInputs.cache
