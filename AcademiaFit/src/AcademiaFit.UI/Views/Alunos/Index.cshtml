@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<h1>Menu de Alunos</h1>
+<style>
+    
+</style>
+
+<div class="container">
+    <div class="col-md-4 btnMenu">
+        <a asp-action="Listagem" asp-controller="Alunos">
+            <i class="fa fa-list"></i> Listagem de Alunos
+        </a>
+    </div>
+    <div class="col-md-4 btnMenu">
+        <a asp-action="Series" asp-controller="Alunos">
+            <i class="fas fa-file-alt"></i> Séries Cadastradas
+        </a>
+    </div>
+    <div class="col-md-4 btnMenu">
+        <a asp-action="Avaliacoes" asp-controller="Alunos">
+            <i class="fas fa-running"></i> Avaliações Marcadas
+        </a>
+    </div>
+    <div class="col-md-4 btnMenu">
+        <a asp-action="Avaliacoes" asp-controller="Alunos">
+            <i class="far fa-thumbs-down"></i> Alunos Inadimplentes
+        </a>
+    </div>
+</div>

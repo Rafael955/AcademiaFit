@@ -69,3 +69,26 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+.btnMenu {
+    background: #eb6864;
+    margin: 25px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.75em;
+    cursor: pointer;
+}
+
+.btnMenu a {
+    color: #222;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.btnMenu:hover {
+    background: #eb6864b5;
+}
+
+.btnMenu a:hover {
+    color: white;
+}

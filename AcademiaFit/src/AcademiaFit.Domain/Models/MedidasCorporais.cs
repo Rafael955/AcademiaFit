@@ -46,6 +46,7 @@ namespace AcademiaFit.Domain.Models.Aggregates
 
         [ForeignKey("AvaliacaoFisicaId")]
         public AvaliacaoFisica AvaliacaoFisica { get; set; }
+
         #endregion
 
         private void CalculoIMC()

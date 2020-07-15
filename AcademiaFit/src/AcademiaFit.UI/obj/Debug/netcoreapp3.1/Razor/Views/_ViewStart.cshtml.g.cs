@@ -21,13 +21,13 @@ using AcademiaFit.UI;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\Views\_ViewImports.cshtml"
-using AcademiaFit.UI.Models;
+using AcademiaFit.UI.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"82eb1d179139a051be9f2704fc1e7231cc111212", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f23670bf1e037a10073321a191ac1f45f2092319", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

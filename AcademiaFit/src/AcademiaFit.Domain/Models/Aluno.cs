@@ -16,5 +16,7 @@ namespace AcademiaFit.Domain.Models
         public string Email { get; set; }
         public Endereco Endereco { get; set; }
         public string CPF { get; set; }
+        public bool Ativo { get; set; }
+        public bool Adimplente { get; set; }
     }
 }

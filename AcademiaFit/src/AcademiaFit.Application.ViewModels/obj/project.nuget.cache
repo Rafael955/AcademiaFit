@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5uWbh+DzgnkRjr9YvwUvPOJ4RdABVJRWvepQPvNWtQ1vNdCMS2wvZhLB+qwAsruMPYjRhcBdSUMLCSDRJEUxxA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Application.ViewModels\\AcademiaFit.Application.ViewModels.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "G/7gQjzMXwVKaz1I8GplhwumwofQgvFMwZQl4FSEj5/U40I4SSc1tVvyE5B+5pfGX5LnMN0KE88ARLQj3tBtPw==",
+  "dgSpecHash": "DNg3eZrFqGuwN6NpllWRuKHnKc/NPcApgde43K8/kAhUyjVhh+wNVo5flblMYX7Of5yNWv4lP79LoVNR87P1zQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Domain.Services\\AcademiaFit.Domain.Services.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512"
+  ],
   "logs": []
 }

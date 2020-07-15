@@ -6,3 +6,7 @@ C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain.Services\ob
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain.Services\obj\Debug\netcoreapp3.1\AcademiaFit.Domain.Services.AssemblyInfo.cs
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain.Services\obj\Debug\netcoreapp3.1\AcademiaFit.Domain.Services.dll
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain.Services\obj\Debug\netcoreapp3.1\AcademiaFit.Domain.Services.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain.Services\obj\Debug\netcoreapp3.1\AcademiaFit.Domain.Services.csprojAssemblyReference.cache
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain.Services\bin\Debug\netcoreapp3.1\AcademiaFit.Domain.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain.Services\bin\Debug\netcoreapp3.1\AcademiaFit.Domain.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain.Services\obj\Debug\netcoreapp3.1\AcademiaFit.Domain.Services.csproj.CopyComplete
