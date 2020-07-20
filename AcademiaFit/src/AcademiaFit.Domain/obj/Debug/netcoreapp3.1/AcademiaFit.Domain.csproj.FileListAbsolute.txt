@@ -1,9 +1,9 @@
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain\bin\Debug\netcoreapp3.1\AcademiaFit.Domain.deps.json
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain\bin\Debug\netcoreapp3.1\AcademiaFit.Domain.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain\bin\Debug\netcoreapp3.1\AcademiaFit.Domain.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain\obj\Debug\netcoreapp3.1\AcademiaFit.Domain.csprojAssemblyReference.cache
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain\obj\Debug\netcoreapp3.1\AcademiaFit.Domain.AssemblyInfoInputs.cache
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain\obj\Debug\netcoreapp3.1\AcademiaFit.Domain.AssemblyInfo.cs
-C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain\bin\Debug\netcoreapp3.1\AcademiaFit.Domain.pdb
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain\obj\Debug\netcoreapp3.1\AcademiaFit.Domain.dll
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain\obj\Debug\netcoreapp3.1\AcademiaFit.Domain.pdb
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain\obj\Debug\netcoreapp3.1\AcademiaFit.Domain.csproj.CoreCompileInputs.cache
-C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Domain\obj\Debug\netcoreapp3.1\AcademiaFit.Domain.csprojAssemblyReference.cache

@@ -1,5 +1,4 @@
 ﻿@model IEnumerable<AcademiaFit.Application.ViewModels.AlunoViewModel>
-
 @{
     ViewData["Title"] = "Listagem";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -8,12 +7,12 @@
 <h1>Listagem de Alunos</h1>
 <br />
 <p>
-    <a class="btn btn-success" asp-action="Cadastrar"><i class=""></i>Cadastrar Novo Aluno</a>
+    <a class="btn btn-success" asp-action="Cadastrar"><i class="fas fa-plus-circle"></i> Cadastrar Novo Aluno</a>
 </p>
 @if (Model.Count() == 0)
 {
     <div class="alert alert-danger text-center">
-        Nenhum aluno cadastro no sistema
+        Nenhum aluno cadastrado no sistema
     </div>
 }
 else
@@ -23,13 +22,7 @@ else
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Sobrenome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataNascimento)
+                @Html.DisplayNameFor(model => model.NomeCompleto)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Telefone)
@@ -38,37 +31,41 @@ else
                 @Html.DisplayNameFor(model => model.Celular)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Email)
+                @Html.DisplayNameFor(model => model.CPF)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CPF)
+                @Html.DisplayNameFor(model => model.Email)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model)
+{
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Nome)
+                @Html.DisplayFor(modelItem => item.NomeCompleto)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Sobrenome)
+                @{ 
+                    var TelefoneFormatado = item.Telefone.FormatoTelCel();
+                }
+                @Html.DisplayFor(modelItem => TelefoneFormatado)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DataNascimento)
+                @{
+                    var CelularFormatado = item.Celular.FormatoTelCel();
+                }
+                @Html.DisplayFor(modelItem => CelularFormatado)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Telefone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Celular)
+                @{
+                    var CPFFormatado = item.CPF.FormatoCpfCnpj();
+                }
+                @Html.DisplayFor(modelItem => CPFFormatado)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CPF)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |

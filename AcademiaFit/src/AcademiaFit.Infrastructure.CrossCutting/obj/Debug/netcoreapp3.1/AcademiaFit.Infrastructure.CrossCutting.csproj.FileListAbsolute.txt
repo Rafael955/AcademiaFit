@@ -1,0 +1,9 @@
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.CrossCutting\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.CrossCutting.deps.json
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.CrossCutting\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.CrossCutting.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.CrossCutting\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.CrossCutting.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.CrossCutting\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.CrossCutting.csprojAssemblyReference.cache
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.CrossCutting\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.CrossCutting\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.CrossCutting\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.CrossCutting.AssemblyInfo.cs
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.CrossCutting\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.CrossCutting.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.CrossCutting\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.CrossCutting.pdb

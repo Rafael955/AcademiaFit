@@ -1,0 +1,14 @@
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.AutoMapper.deps.json
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.AutoMapper.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.AutoMapper.csprojAssemblyReference.cache
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.AutoMapper.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.AutoMapper.AssemblyInfo.cs
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.AutoMapper.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\bin\Debug\netcoreapp3.1\AcademiaFit.Application.ViewModels.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\bin\Debug\netcoreapp3.1\AcademiaFit.Domain.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\bin\Debug\netcoreapp3.1\AcademiaFit.Application.ViewModels.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\bin\Debug\netcoreapp3.1\AcademiaFit.Domain.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.AutoMapper.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.AutoMapper.csproj.CopyComplete
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.AutoMapper.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.AutoMapper.pdb

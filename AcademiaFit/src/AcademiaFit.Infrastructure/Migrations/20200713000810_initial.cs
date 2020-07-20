@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace AcademiaFit.Infrastructure.Migrations
+namespace AcademiaFit.Infrastructure.Data.Migrations
 {
     public partial class initial : Migration
     {

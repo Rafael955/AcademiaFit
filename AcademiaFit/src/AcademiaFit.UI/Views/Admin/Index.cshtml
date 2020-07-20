@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<h1>Menu do Administrador</h1>
+
+<div class="container">
+    <div class="col-md-4 btnMenu">
+        <a asp-action="Listagem" asp-controller="Alunos">
+            <i class="fa fa-list"></i> Listagem de Alunos
+        </a>
+    </div>
+    <div class="col-md-4 btnMenu">
+        <a asp-action="Listagem" asp-controller="Professores">
+            <i class="fa fa-list"></i> Listagem de Professores
+        </a>
+    </div>
+    <div class="col-md-4 btnMenu">
+        <a asp-action="Avaliacoes" asp-controller="Alunos">
+            <i class="far fa-thumbs-down"></i> Alunos Inadimplentes
+        </a>
+    </div>
+</div>
+

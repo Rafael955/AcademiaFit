@@ -5,8 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AcademiaFit.Application.ViewModels\AcademiaFit.Application.ViewModels.csproj" />
+    <ProjectReference Include="..\AcademiaFit.Domain.Services\AcademiaFit.Domain.Services.csproj" />
     <ProjectReference Include="..\AcademiaFit.Domain\AcademiaFit.Domain.csproj" />
-    <ProjectReference Include="..\AcademiaFit.UI\AcademiaFit.UI.csproj" />
   </ItemGroup>
 
 </Project>

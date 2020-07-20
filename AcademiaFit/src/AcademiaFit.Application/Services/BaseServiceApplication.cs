@@ -1,4 +1,5 @@
 ﻿using AcademiaFit.Application.Interfaces;
+using AcademiaFit.Domain.Interfaces.IService;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,34 +8,41 @@ namespace AcademiaFit.Application.Services
 {
     public class BaseServiceApplication<T> : IDisposable, IBaseServiceApplication<T> where T : class
     {
-        public void Adicionar(T obj)
+        private readonly IBaseServiceDomain<T> _serviceDomain;
+
+        public BaseServiceApplication(IBaseServiceDomain<T> serviceDomain)
         {
-            throw new NotImplementedException();
+            _serviceDomain = serviceDomain;
         }
 
-        public void Atualizar(T obj)
+        public virtual void Adicionar(T obj)
         {
-            throw new NotImplementedException();
+            _serviceDomain.Adicionar(obj);
         }
 
-        public void Excluir(T obj)
+        public virtual void Atualizar(T obj)
         {
-            throw new NotImplementedException();
+            _serviceDomain.Atualizar(obj);
         }
 
-        public IEnumerable<T> Listar()
+        public virtual void Excluir(T obj)
         {
-            throw new NotImplementedException();
+            _serviceDomain.Excluir(obj);
         }
 
-        public T ObterPorId(int id)
+        public virtual IEnumerable<T> Listar()
         {
-            throw new NotImplementedException();
+            return _serviceDomain.Listar();
+        }
+
+        public virtual T ObterPorId(Guid id)
+        {
+            return _serviceDomain.ObterPorId(id);
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _serviceDomain.Dispose();
         }
     }
 }

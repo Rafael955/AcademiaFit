@@ -1,11 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AcademiaFit.Infrastructure.Context;
+using AcademiaFit.Application.Interfaces;
+using AcademiaFit.Application.Services;
+using AcademiaFit.Domain.Interfaces.IRepository;
+using AcademiaFit.Domain.Interfaces.IService;
+using AcademiaFit.Domain.Services;
+using AcademiaFit.Infrastructure.Data.AutoMapper;
+using AcademiaFit.Infrastructure.Data.Context;
+using AcademiaFit.Infrastructure.Data.Repository;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -32,6 +35,22 @@ namespace AcademiaFit.UI
             services.AddControllersWithViews()
                 .AddNewtonsoftJson()
                 .AddRazorRuntimeCompilation();
+
+            services.AddAutoMapper(typeof(Startup));
+
+            services.AddSingleton<AutoMapper.IConfigurationProvider>(AutoMapperConfig.RegisterMappings());
+            services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(), sp.GetService));
+
+
+            services.AddScoped<ApplicationDbContext>();
+            
+            services.AddScoped<IAlunoServiceApplication, AlunoServiceApplication>();
+            services.AddScoped<IAlunoServiceDomain, AlunoServiceDomain>();
+            services.AddScoped<IAlunoRepository, AlunoRepository>();
+
+            services.AddScoped<IProfessorServiceApplication, ProfessorServiceApplication>();
+            services.AddScoped<IProfessorServiceDomain, ProfessorServiceDomain>();
+            services.AddScoped<IProfessorRepository, ProfessorRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

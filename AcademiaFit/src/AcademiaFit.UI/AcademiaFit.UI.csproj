@@ -22,8 +22,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AcademiaFit.Application.ViewModels\AcademiaFit.Application.ViewModels.csproj" />
-    <ProjectReference Include="..\AcademiaFit.Domain\AcademiaFit.Domain.csproj" />
-    <ProjectReference Include="..\AcademiaFit.Infrastructure\AcademiaFit.Infrastructure.csproj" />
+    <ProjectReference Include="..\AcademiaFit.Application\AcademiaFit.Application.csproj" />
+    <ProjectReference Include="..\AcademiaFit.Infrastructure.AutoMapper\AcademiaFit.Infrastructure.Data.AutoMapper.csproj" />
+    <ProjectReference Include="..\AcademiaFit.Infrastructure.CrossCutting\AcademiaFit.Infrastructure.CrossCutting.csproj" />
+    <ProjectReference Include="..\AcademiaFit.Infrastructure\AcademiaFit.Infrastructure.Data.csproj" />
   </ItemGroup>
 
 

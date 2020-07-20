@@ -1,12 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using AcademiaFit.Application.Interfaces;
 using AcademiaFit.Application.ViewModels;
+using AcademiaFit.Domain.Models;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AcademiaFit.UI.Controllers
 {
     public class AlunosController : Controller
     {
+        private readonly IAlunoServiceApplication _alunoServiceApp;
+
+        public AlunosController(IAlunoServiceApplication alunoServiceApp)
+        {
+            _alunoServiceApp = alunoServiceApp;
+        }
+
         [HttpGet]
         public IActionResult Index()
         {
@@ -15,7 +25,7 @@ namespace AcademiaFit.UI.Controllers
 
         public IActionResult Listagem()
         {
-            IEnumerable<AlunoViewModel> listaDeAlunos = new List<AlunoViewModel>();
+            var listaDeAlunos = _alunoServiceApp.ListarAlunos();
             return View(listaDeAlunos);
         }
 
@@ -31,6 +41,15 @@ namespace AcademiaFit.UI.Controllers
             if (!ModelState.IsValid)
             {
                 return View(viewModel);
+            }
+
+            try
+            {
+                _alunoServiceApp.AdicionarAluno(viewModel);
+            }
+            catch (Exception)
+            {
+                throw new Exception();
             }
 
             return RedirectToAction(nameof(Listagem));

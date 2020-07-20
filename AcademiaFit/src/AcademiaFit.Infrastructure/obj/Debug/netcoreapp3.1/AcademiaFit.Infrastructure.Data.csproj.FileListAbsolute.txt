@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.csprojAssemblyReference.cache
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.AssemblyInfo.cs
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.deps.json
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.runtimeconfig.json
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.runtimeconfig.dev.json
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\bin\Debug\netcoreapp3.1\AcademiaFit.Domain.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\bin\Debug\netcoreapp3.1\AcademiaFit.Domain.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.csproj.CopyComplete
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.genruntimeconfig.cache

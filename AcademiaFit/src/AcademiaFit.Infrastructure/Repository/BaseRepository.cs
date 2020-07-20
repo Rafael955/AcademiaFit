@@ -1,40 +1,57 @@
 ﻿using AcademiaFit.Domain.Interfaces.IRepository;
+using AcademiaFit.Infrastructure.Data.Context;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
-namespace AcademiaFit.Infrastructure.Repository
+namespace AcademiaFit.Infrastructure.Data.Repository
 {
     public abstract class BaseRepository<T> : IDisposable, IBaseRepository<T> where T : class
     {
-        public void Adicionar(T obj)
+        private readonly ApplicationDbContext _context;
+
+        public BaseRepository(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public virtual void Adicionar(T obj)
+        {
+            try
+            {
+                _context.Set<T>().Add(obj);
+                _context.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public virtual void Atualizar(T obj)
         {
             throw new NotImplementedException();
         }
 
-        public void Atualizar(T obj)
-        {
-            throw new NotImplementedException();
-        }
-
-        public T DetalharId(int id)
+        public virtual T ObterPorId(Guid id)
         {
             throw new NotImplementedException();
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _context.Dispose();
         }
 
-        public void Excluir(T obj)
+        public virtual void Excluir(T obj)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<T> Listar()
+        public virtual IEnumerable<T> Listar()
         {
-            throw new NotImplementedException();
+            return _context.Set<T>().ToList();
         }
     }
 }

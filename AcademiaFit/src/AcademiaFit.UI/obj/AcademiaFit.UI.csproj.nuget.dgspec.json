@@ -65,6 +65,140 @@
         }
       }
     },
+    "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Application\\AcademiaFit.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Application\\AcademiaFit.Application.csproj",
+        "projectName": "AcademiaFit.Application",
+        "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Application\\AcademiaFit.Application.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Application.ViewModels\\AcademiaFit.Application.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Application.ViewModels\\AcademiaFit.Application.ViewModels.csproj"
+              },
+              "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Domain.Services\\AcademiaFit.Domain.Services.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Domain.Services\\AcademiaFit.Domain.Services.csproj"
+              },
+              "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Domain\\AcademiaFit.Domain.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Domain\\AcademiaFit.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Domain.Services\\AcademiaFit.Domain.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Domain.Services\\AcademiaFit.Domain.Services.csproj",
+        "projectName": "AcademiaFit.Domain.Services",
+        "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Domain.Services\\AcademiaFit.Domain.Services.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Domain.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Domain\\AcademiaFit.Domain.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Domain\\AcademiaFit.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Domain\\AcademiaFit.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -107,6 +241,10 @@
             "Flunt": {
               "target": "Package",
               "version": "[1.0.5, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             }
           },
           "imports": [
@@ -128,12 +266,142 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure\\AcademiaFit.Infrastructure.csproj": {
+    "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure.AutoMapper\\AcademiaFit.Infrastructure.Data.AutoMapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure\\AcademiaFit.Infrastructure.csproj",
-        "projectName": "AcademiaFit.Infrastructure",
-        "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure\\AcademiaFit.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure.AutoMapper\\AcademiaFit.Infrastructure.Data.AutoMapper.csproj",
+        "projectName": "AcademiaFit.Infrastructure.Data.AutoMapper",
+        "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure.AutoMapper\\AcademiaFit.Infrastructure.Data.AutoMapper.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure.AutoMapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Application.ViewModels\\AcademiaFit.Application.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Application.ViewModels\\AcademiaFit.Application.ViewModels.csproj"
+              },
+              "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Domain\\AcademiaFit.Domain.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Domain\\AcademiaFit.Domain.csproj"
+              },
+              "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure.CrossCutting\\AcademiaFit.Infrastructure.CrossCutting.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure.CrossCutting\\AcademiaFit.Infrastructure.CrossCutting.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure.CrossCutting\\AcademiaFit.Infrastructure.CrossCutting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure.CrossCutting\\AcademiaFit.Infrastructure.CrossCutting.csproj",
+        "projectName": "AcademiaFit.Infrastructure.CrossCutting",
+        "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure.CrossCutting\\AcademiaFit.Infrastructure.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure.CrossCutting\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure\\AcademiaFit.Infrastructure.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure\\AcademiaFit.Infrastructure.Data.csproj",
+        "projectName": "AcademiaFit.Infrastructure.Data",
+        "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure\\AcademiaFit.Infrastructure.Data.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
@@ -242,11 +510,17 @@
               "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Application.ViewModels\\AcademiaFit.Application.ViewModels.csproj": {
                 "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Application.ViewModels\\AcademiaFit.Application.ViewModels.csproj"
               },
-              "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Domain\\AcademiaFit.Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Domain\\AcademiaFit.Domain.csproj"
+              "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Application\\AcademiaFit.Application.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Application\\AcademiaFit.Application.csproj"
               },
-              "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure\\AcademiaFit.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure\\AcademiaFit.Infrastructure.csproj"
+              "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure.AutoMapper\\AcademiaFit.Infrastructure.Data.AutoMapper.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure.AutoMapper\\AcademiaFit.Infrastructure.Data.AutoMapper.csproj"
+              },
+              "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure.CrossCutting\\AcademiaFit.Infrastructure.CrossCutting.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure.CrossCutting\\AcademiaFit.Infrastructure.CrossCutting.csproj"
+              },
+              "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure\\AcademiaFit.Infrastructure.Data.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\AcademiaFit\\AcademiaFit\\src\\AcademiaFit.Infrastructure\\AcademiaFit.Infrastructure.Data.csproj"
               }
             }
           }

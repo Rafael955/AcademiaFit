@@ -1,0 +1,16 @@
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.AutoMapper.deps.json
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.AutoMapper.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.AutoMapper.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\bin\Debug\netcoreapp3.1\AcademiaFit.Application.ViewModels.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\bin\Debug\netcoreapp3.1\AcademiaFit.Domain.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\bin\Debug\netcoreapp3.1\AcademiaFit.Application.ViewModels.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\bin\Debug\netcoreapp3.1\AcademiaFit.Domain.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.AutoMapper.csprojAssemblyReference.cache
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.AutoMapper.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.AutoMapper.AssemblyInfo.cs
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.AutoMapper.csproj.CopyComplete
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.AutoMapper.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.AutoMapper.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.CrossCutting.dll
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.CrossCutting.pdb
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.Infrastructure.AutoMapper\obj\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.AutoMapper.csproj.CoreCompileInputs.cache

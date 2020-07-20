@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="~/font-awesome/css/all.min.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-journal.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    @*<style>
+        body::after {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        body {
+            background-image: url("./images/risen-wang-20jX9b35r_M-unsplash.jpg");
+        }
+        footer {
+            background: red;
+        }
+    </style>*@
 </head>
 <body>
     <header>
@@ -23,7 +34,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Alunos" asp-action="Index">Alunos</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Administrador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Professores" asp-action="Index">Professor</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>

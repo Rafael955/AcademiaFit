@@ -6,6 +6,14 @@ $(document).ready(function () {
     $("#cpf").mask("000.000.000-00");
     $("#telefone").mask("(00) 0000-0000");
     $("#celular").mask("(00) 00000-0000");
+    $("#cref").mask("000000-T/SS", {
+        translation: {
+            'T': {
+                pattern: /[G|P]/,
+            }
+        }
+    });
+    $("#cep").mask("00.000-000");
 
     // ViaCep WebService
     $("#cep").blur(function () {
@@ -14,7 +22,7 @@ $(document).ready(function () {
         var cep = $(this).val().replace(/\D/g, '');
 
         //Verifica se campo cep possui valor informado.
-        if (cep != "") {
+        if (cep !== "") {
 
             //Expressão regular para validar o CEP.
             var validacep = /^[0-9]{8}$/;

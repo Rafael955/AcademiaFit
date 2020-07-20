@@ -4,7 +4,7 @@ using AcademiaFit.Domain.Models.Aggregates.SerieAggregate;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
-namespace AcademiaFit.Infrastructure.Context
+namespace AcademiaFit.Infrastructure.Data.Context
 {
     public class ApplicationDbContext : DbContext
     {

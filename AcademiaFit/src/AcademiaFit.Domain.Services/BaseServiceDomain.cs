@@ -1,4 +1,5 @@
-﻿using AcademiaFit.Domain.Interfaces.IService;
+﻿using AcademiaFit.Domain.Interfaces.IRepository;
+using AcademiaFit.Domain.Interfaces.IService;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,34 +8,41 @@ namespace AcademiaFit.Domain.Services
 {
     public abstract class BaseServiceDomain<T> : IDisposable, IBaseServiceDomain<T> where T : class
     {
+        private readonly IBaseRepository<T> _repository;
+
+        public BaseServiceDomain(IBaseRepository<T> repository)
+        {
+            _repository = repository;
+        }
+
         public void Adicionar(T obj)
         {
-            throw new NotImplementedException();
+            _repository.Adicionar(obj);
         }
 
         public void Atualizar(T obj)
         {
-            throw new NotImplementedException();
-        }
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
+            _repository.Atualizar(obj);
         }
 
         public void Excluir(T obj)
         {
-            throw new NotImplementedException();
+            _repository.Excluir(obj);
         }
 
         public IEnumerable<T> Listar()
         {
-            throw new NotImplementedException();
+            return _repository.Listar();
         }
 
-        public T ObterPorId(int id)
+        public T ObterPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return _repository.ObterPorId(id);
+        }
+
+        public void Dispose()
+        {
+            _repository.Dispose();
         }
     }
 }

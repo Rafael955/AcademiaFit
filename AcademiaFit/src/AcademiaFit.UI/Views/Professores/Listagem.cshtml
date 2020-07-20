@@ -1,0 +1,83 @@
+﻿@model IEnumerable<AcademiaFit.Application.ViewModels.ProfessorViewModel>
+@{
+    ViewData["Title"] = "Listagem";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<br />
+<h1>Listagem de Professores</h1>
+<br />
+<p>
+    <a class="btn btn-success" asp-action="Cadastrar"><i class="fas fa-plus-circle"></i> Cadastrar Novo Professor</a>
+</p>
+@if (Model.Count() == 0)
+{
+    <div class="alert alert-danger text-center">
+        Nenhum professor cadastrado no sistema
+    </div>
+}
+else
+{
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.NomeCompleto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Telefone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Celular)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CREF)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NomeCompleto)
+                </td>
+                <td>
+                    @{
+                        var TelefoneFormatado = item.Telefone.FormatoTelCel();
+                    }
+                    @Html.DisplayFor(modelItem => TelefoneFormatado)
+                </td>
+                <td>
+                    @{
+                        var CelularFormatado = item.Celular.FormatoTelCel();
+                    }
+                    @Html.DisplayFor(modelItem => CelularFormatado)
+                </td>
+                <td>
+                    @{ 
+                        var CREFFormatado = item.CREF.FormatoCref();
+                    }
+                    @Html.DisplayFor(modelItem => CREFFormatado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+

@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Menu de Professores";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<h1>Menu de Professores</h1>
+
+<div class="container">
+    <div class="col-md-4 btnMenu">
+        <a asp-action="CriarSerie" asp-controller="Professores">
+            <i class="fas fa-file-alt"></i> Criar Série de Aluno
+        </a>
+    </div>
+    <div class="col-md-4 btnMenu">
+        <a asp-action="Avaliacoes" asp-controller="Professores">
+            <i class="fas fa-running"></i> Avaliação Física
+        </a>
+    </div>
+</div>
+
