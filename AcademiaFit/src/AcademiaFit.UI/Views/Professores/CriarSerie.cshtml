@@ -24,12 +24,12 @@
                 <span asp-validation-for="Serie.AlunoId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Criar Série" class="btn btn-success" id="btnSubmit" data-url="@Url.Action("CriarSerie", "Professores")"/> |
+                <input type="submit" value="Criar Série" class="btn btn-success" id="btnSubmit" data-url="@Url.Action("CriarSerie", "Professores")" /> |
                 <a asp-action="Index" class="btn btn-dark">Voltar para o menu</a>
             </div>
         </div>
         <div class="col-md-6">
-            <h4>Dados da Série</h4>
+            <h4>Exercícios da Série</h4>
             <hr />
             <div class="form-group row">
                 <div class="col-6">
@@ -90,8 +90,8 @@
             Error: "error"
         };
 
-        function incluir_linha_produto(exercicio, numSeries, numReps, exercicioID) {
-            $('#grid tbody').append(Mustache.render($('#template-serie').html(), { Sequencia: sequencia, Exercicio: exercicio, NumSeries: numSeries, NumReps: numReps, ExercicioID: exercicioID }));
+        function incluir_linha_produto(exercicio, numSeries, numReps, exercicioId) {
+            $('#grid tbody').append(Mustache.render($('#template-serie').html(), { Sequencia: sequencia, Exercicio: exercicio, NumSeries: numSeries, NumReps: numReps, ExercicioId: exercicioId }));
             sequencia++;
         }
 
@@ -133,7 +133,7 @@
 
                 exercisesArray.push(itemSerie);
 
-                incluir_linha_produto(exercicio, numSeries, numReps, exercicioID);
+                incluir_linha_produto(exercicio, numSeries, numReps, exercicioId);
 
                 $("#grid").on("click", ".btnItemSerieRemove", function () {
                     var id = $(this).closest("tr").attr("id");
@@ -171,14 +171,12 @@
 
                 var url = $(this).data('url');
 
-                $.post(url, add_anti_forgery_token(viewModel), function (response) {
-                    if (response.OK) {
-                        swal('Sucesso', 'Nova Série cadastrada com sucesso.', 'info');
-                    }
+                $.post(url, add_anti_forgery_token(viewModel), function () {
+                    showAlertMessage('Sucesso', 'Nova Série cadastrada com sucesso.', 'info');
                 })
-                .fail(function () {
-                    swal('Aviso', 'Não foi possível cadastrar a série do aluno.', 'warning');
-                });
+                    .fail(function () {
+                        showAlertMessage('Aviso', 'Não foi possível cadastrar a série do aluno.', 'warning');
+                    });
             });
         });
     </script>
@@ -210,28 +208,3 @@
         });
     </script>*@
 }
-@*@section Scripts{
-        <script type="text/javascript">
-            $(document).ready(function () {
-                var id = 0;
-                $("#addExerciseButton").on('click', function (event) {
-                    event.preventDefault();
-                    var exercicio = $("#exercicioSelecionado").val();
-                    var numSeries = $("#numSeries").val();
-                    var numReps = $("#numReps").val();
-                    var observacao = $("#observacao").val();
-
-                    $("#exercicio").val("");
-                    $("#numSeries").val(0);
-                    $("#numReps").val(0);
-                    $("#observacao").val("");
-
-                    $("#itemSerie").append(`<li class='list-group-item d-flex justify-content-between' id="itemSerie${id}"><div>${exercicio} - ${numSeries}x${numReps}</div> <i class="fas fa-trash itemTrash"></i></li>`);
-                    id++;
-                });
-                $(".itemTrash").on('click', function (event) {
-                    event.preventDefault();
-                })
-            });
-        </script>
-    }*@

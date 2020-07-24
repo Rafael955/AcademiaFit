@@ -16,11 +16,6 @@ namespace AcademiaFit.Domain.Services
             _serieRepository = serieRepository;
         }
 
-        public void AdicionarItemNaSerie(ItemSerie itemSerie)
-        {
-            _serieRepository.AdicionarItemNaSerie(itemSerie);
-        }
-
         public IEnumerable<Serie> ListarSeriesPorNomeAluno(string busca)
         {
             throw new NotImplementedException();

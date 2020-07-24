@@ -7,22 +7,86 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace AcademiaFit.Infrastructure.Data.Repository
 {
     public class SerieRepository : BaseRepository<Serie>, ISerieRepository
     {
-        private ApplicationDbContext _context;
+        private ApplicationDbContext _context; 
+        public IConfiguration Configuration { get; }
 
-        public SerieRepository(ApplicationDbContext context) : base(context)
+        public SerieRepository(ApplicationDbContext context, IConfiguration configuration) : base(context)
         {
             _context = context;
+            Configuration = configuration;
         }
 
-        public void AdicionarItemNaSerie(ItemSerie itemSerie)
+        public override void Adicionar(Serie serie)
         {
-            _context.ItensSeries.Add(itemSerie);
-            _context.SaveChanges();
+            var connectionString = Configuration.GetConnectionString("DefaultConnection");
+
+            using var connection = new SqlConnection(connectionString);
+
+            //Inserindo Série(Serie)
+            var cmdText = "INSERT INTO Series (Id, DataCadastro, ProfessorResponsavelId, AlunoId) VALUES (@Id, @DataCadastro, @ProfessorResponsavelId, @AlunoId)";
+
+            var insertSerie = new SqlCommand(cmdText, connection);
+            insertSerie.CommandType = CommandType.Text;
+
+            insertSerie.Parameters.AddWithValue("@Id", serie.Id);
+            insertSerie.Parameters.AddWithValue("@DataCadastro", serie.DataCadastro);
+            insertSerie.Parameters.AddWithValue("@ProfessorResponsavelId", serie.ProfessorResponsavelId);
+            insertSerie.Parameters.AddWithValue("@AlunoId", serie.AlunoId);
+
+            try
+            {
+                connection.Open();
+                insertSerie.ExecuteNonQuery();
+
+                //Inserindo Exercicios da Série(ItemSerie)
+                foreach (var itemSerie in serie.ItemsDaSerie)
+                {
+                    cmdText = $"INSERT INTO ItensSeries ("+
+                        $"Id, " +
+                        $"DataCadastro, " +
+                        $"SerieId, " +
+                        $"ExercicioId, " +
+                        $"NumeroSeries, " +
+                        $"NumeroRepeticoes, " +
+                        $"Observacoes) VALUES ("+
+                        $"@Id, " +
+                        $"@DataCadastro, " +
+                        $"@SerieId, " +
+                        $"@ExercicioId, " +
+                        $"@NumeroSeries, " +
+                        $"@NumeroRepeticoes, " +
+                        $"@Observacoes)";
+
+                    var insertItemSerie = new SqlCommand(cmdText, connection);
+                    insertItemSerie.CommandType = CommandType.Text;
+
+                    insertItemSerie.Parameters.AddWithValue("@Id", itemSerie.Id);
+                    insertItemSerie.Parameters.AddWithValue("@DataCadastro", itemSerie.DataCadastro);
+                    insertItemSerie.Parameters.AddWithValue("@SerieId", serie.Id);
+                    insertItemSerie.Parameters.AddWithValue("@ExercicioId", itemSerie.ExercicioId);
+                    insertItemSerie.Parameters.AddWithValue("@NumeroSeries", itemSerie.NumeroSeries);
+                    insertItemSerie.Parameters.AddWithValue("@NumeroRepeticoes", itemSerie.NumeroRepeticoes);
+                    insertItemSerie.Parameters.AddWithValue("@Observacoes", itemSerie.Observacoes);
+
+                    insertItemSerie.ExecuteNonQuery();
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                connection.Close();
+            }
         }
 
         public override IEnumerable<Serie> Listar()

@@ -75,7 +75,8 @@ namespace AcademiaFit.Infrastructure.Data.AutoMapper
                         Serie = new Serie
                         {
                             AlunoId = src.AlunoId,
-                            ProfessorResponsavelId = src.ProfessorResponsavelId
+                            ProfessorResponsavelId = src.ProfessorResponsavelId,
+                            ItemsDaSerie = src.ItemsDaSerie
                         }
                     };
                 });

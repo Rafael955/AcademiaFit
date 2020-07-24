@@ -20,11 +20,6 @@ namespace AcademiaFit.Application.Services
             _mapper = mapper;
         }
 
-        public void AdicionarItemNaSerie(ItemSerieViewModel itemSerie)
-        {
-            _serieServiceDomain.AdicionarItemNaSerie(itemSerie.ItemSerie);
-        }
-
         public void AdicionarSerie(SerieViewModel serie)
         {
             _serieServiceDomain.Adicionar(_mapper.Map<Serie>(serie));

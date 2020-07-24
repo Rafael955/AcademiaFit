@@ -14,7 +14,7 @@ namespace AcademiaFit.Application.Interfaces
         void AtualizarSerie(SerieViewModel serie);
         void ExcluirSerie(SerieViewModel serie);
 
-        void AdicionarItemNaSerie(ItemSerieViewModel itemSerie);
+        //void AdicionarItemNaSerie(ItemSerieViewModel itemSerie);
         void RemoverItemDaSerie(ItemSerieViewModel itemSerie);
         IEnumerable<SerieViewModel> ListarSeriesPorNomeAluno(string busca);
         IEnumerable<SerieViewModel> ListarSeriesPorNomeProfessor(string busca);

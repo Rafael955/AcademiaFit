@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 using AcademiaFit.Application.Interfaces;
 using AcademiaFit.Application.ViewModels;
-using AcademiaFit.Application.ViewModels.Binders;
 using AcademiaFit.Domain.Interfaces.IRepository;
 using AcademiaFit.Domain.Models.Aggregates.SerieAggregate;
 using Microsoft.AspNetCore.Mvc;
@@ -85,37 +83,10 @@ namespace AcademiaFit.UI.Controllers
             catch
             {
                 TempData["Created"] = false;
-                return View();
-            }
-
-            TempData["Created"] = true;
-            return View();
-        }
-
-        public IActionResult AdicionarItemSerie()
-        {
-            ViewBag.Title = "";
-            return View(LoadDropDownSerie());
-        }
-
-        [HttpPost]
-        public IActionResult AdicionarItemSerie(ItemSerieViewModel viewModel)
-        {
-            if (!ModelState.IsValid)
-            {
                 return View(LoadDropDownSerie());
             }
 
-            try
-            {
-                _serieServiceApp.AdicionarItemNaSerie(viewModel);
-                TempData["Created"] = true;
-            }
-            catch (Exception)
-            {
-                throw new Exception();
-            }
-
+            TempData["Created"] = true;
             return View(LoadDropDownSerie());
         }
 
