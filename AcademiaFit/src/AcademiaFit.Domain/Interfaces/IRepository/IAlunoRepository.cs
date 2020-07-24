@@ -8,7 +8,7 @@ namespace AcademiaFit.Domain.Interfaces.IRepository
 {
     public interface IAlunoRepository : IBaseRepository<Aluno>
     {
-        Aluno DetalharPorNome(string busca);
+        Aluno ObterAlunoPorNome(string busca);
         IEnumerable<Aluno> ListarAlunosAtivos();
         IEnumerable<Aluno> ListarAlunosInadimplentes();
         IEnumerable<SelectListItem> ObterListaAlunosForDropDown();

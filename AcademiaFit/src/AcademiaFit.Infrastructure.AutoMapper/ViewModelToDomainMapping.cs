@@ -1,5 +1,6 @@
 ﻿using AcademiaFit.Application.ViewModels;
 using AcademiaFit.Domain.Models;
+using AcademiaFit.Domain.Models.Aggregates.SerieAggregate;
 using AcademiaFit.Infrastructure.CrossCutting.Extensions;
 using AutoMapper;
 
@@ -61,6 +62,17 @@ namespace AcademiaFit.Infrastructure.Data.AutoMapper
                         Telefone = src.Telefone.RemoveMask()
                     };
                 });
+
+            CreateMap<SerieViewModel, Serie>()
+                .ConvertUsing((src, dst) =>
+            {
+                return new Serie
+                {
+                    AlunoId = src.Serie.AlunoId,
+                    ProfessorResponsavelId = src.Serie.ProfessorResponsavelId,
+                    ItemsDaSerie = src.ItensDaSerie
+                };
+            });
         }
     }
 }

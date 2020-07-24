@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using AcademiaFit.Application.Interfaces;
+﻿using AcademiaFit.Application.Interfaces;
 using AcademiaFit.Application.ViewModels;
-using AcademiaFit.Domain.Models;
-using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace AcademiaFit.UI.Controllers
 {

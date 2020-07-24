@@ -17,7 +17,7 @@ namespace AcademiaFit.Domain.Services
             _alunoRepository = alunoRepository;
         }
         // TODO: Programar possíveis validações/regras de negócio aqui nesta camada.
-        public Aluno DetalharPorNome(string busca)
+        public Aluno ObterAlunoPorNome(string busca)
         {
             throw new NotImplementedException();
         }

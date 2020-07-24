@@ -95,3 +95,12 @@ body {
 .btnMenu a:hover {
     color: white;
 }
+
+.itemTrash {
+    color: #F00;
+}
+
+.itemTrash:hover {
+    cursor: pointer;
+    color: #f76060
+}

@@ -7,44 +7,231 @@
 <h1>Criação de Série</h1>
 <br />
 <div class="row">
-    <div class="col-md-12">
-        <form asp-action="Cadastrar" class="row">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="col-md-6">
-                <h4>Dados do Professor Responsável e Aluno</h4>
-                <hr />
-                <div class="form-group">
-                    <div class="col-6">
-                        <label>Professor Responsável</label>
-                    </div>
-                    <div class="col-12">
-                        @Html.DropDownListFor(m => m.Serie.ProfessorResponsavel.Id, Model.ListaProfessores, "-- Por favor, selecione um professor responsável --", new { @class = "form-control" })
-                        <span asp-validation-for="Serie.ProfessorResponsavel.Id" class="text-danger"></span>
-                    </div>
+    <div class="col-md-12 row">
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-md-6">
+            <h4>Dados do Professor Responsável e Aluno</h4>
+            <hr />
+            <div class="form-group">
+                <label>Professor Responsável</label>
+                @Html.DropDownListFor(m => m.Serie.ProfessorResponsavelId, Model.ListaProfessores, "-- Por favor, selecione um professor responsável --", new { @class = "form-control", @id = "ProfessorResponsavelId" })
+                <span asp-validation-for="Serie.ProfessorResponsavelId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Aluno</label>
+                @Html.DropDownListFor(m => m.Serie.AlunoId, Model.ListaAlunos, "-- Por favor, selecione o aluno --", new { @class = "form-control", @id = "AlunoId" })
+                <span asp-validation-for="Serie.AlunoId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Criar Série" class="btn btn-success" id="btnSubmit" data-url="@Url.Action("CriarSerie", "Professores")"/> |
+                <a asp-action="Index" class="btn btn-dark">Voltar para o menu</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4>Dados da Série</h4>
+            <hr />
+            <div class="form-group row">
+                <div class="col-6">
+                    <label class="control-label">Exercicio</label>
+                    @Html.DropDownListFor(m => m.ItemSerie.Exercicio.Id, Model.ListaExercicios, "-- Por favor, selecione o exercício --", new { @class = "form-control", @id = "exercicioSelecionado" })
+                    <span asp-validation-for="ItemSerie.Exercicio.Id" class="text-danger"></span>
                 </div>
-                <div class="form-group">
-                    <div class="col-6">
-                        <label>Aluno</label>
-                    </div>
-                    <div class="col-12">
-                        @Html.DropDownListFor(m => m.Serie.Aluno.Id, Model.ListaAlunos, "-- Por favor, selecione o aluno --", new { @class = "form-control" })
-                        <span asp-validation-for="Serie.Aluno.Id" class="text-danger"></span>
-                    </div>
+                <div class="col-2 pr-0">
+                    <label asp-for="ItemSerie.NumeroSeries" class="control-label"></label>
+                    <input asp-for="ItemSerie.NumeroSeries" class="form-control" id="numSeries" />
+                    <span asp-validation-for="ItemSerie.NumeroSeries" class="text-danger"></span>
+                </div>
+                <div class="col-1" style="margin-top:35px;">X</div>
+                <div class="col-2 pl-0">
+                    <label asp-for="ItemSerie.NumeroRepeticoes" class="control-label"></label>
+                    <input asp-for="ItemSerie.NumeroRepeticoes" class="form-control" id="numReps" />
+                    <span asp-validation-for="ItemSerie.NumeroRepeticoes" class="text-danger"></span>
+                </div>
+                @*<input type="submit" class="btn btn-primary" style="height:50%;margin-top:32px;" />*@
+                <button class="btn btn-primary" id="incluirExercicio" style="height:50%;margin-top:32px;">+</button>
+            </div>
+            <div class="form-group row">
+                <div class="col-12">
+                    <label asp-for="ItemSerie.Observacoes" class="control-label"></label>
+                    <input asp-for="ItemSerie.Observacoes" class="form-control" id="observacao" />
+                    <span asp-validation-for="ItemSerie.Observacoes" class="text-danger"></span>
                 </div>
             </div>
-            <div class="col-md-6">
-                <h4>Dados da Série</h4>
-                <hr />
-                <div class="form-group col-12">
-                    <div class="col-6 row">
-                        <label>Exercicio</label>
-                    </div>
-                    <div class="col-12 row">
-                        <select class="form-control col-10"></select>
-                        <button class="btn btn-primary" style="margin-left:25px;">+</button>
-                    </div>
-                </div>
+            <div class="form-group">
+                <label>Preview da Série</label>
+                <table id="grid" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Exercício</th>
+                            <th>Nº de Séries</th>
+                            <th>Nº de Repetições</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
             </div>
-        </form>
+        </div>
     </div>
 </div>
+@section Scripts {
+    <script src="~/mustache.js/mustache.min.js"></script>
+    <script src="~/js/antiforgery.js"></script>
+    <script>
+        var sequencia = 1;
+        var exercisesArray = [];
+
+        const AlertMsgTypesEnum = {
+            Success: "success",
+            Info: "info",
+            Warning: "warning",
+            Error: "error"
+        };
+
+        function incluir_linha_produto(exercicio, numSeries, numReps, exercicioID) {
+            $('#grid tbody').append(Mustache.render($('#template-serie').html(), { Sequencia: sequencia, Exercicio: exercicio, NumSeries: numSeries, NumReps: numReps, ExercicioID: exercicioID }));
+            sequencia++;
+        }
+
+        function showAlertMessage(title, text, type) {
+            swal({
+                title: title,
+                text: text,
+                type: type,
+                confirmButtonClass: "btn-" + type,
+                closeOnConfirm: false
+            });
+        }
+
+        $(document).ready(function () {
+            $('#incluirExercicio').on('click', function (e) {
+                e.preventDefault();
+
+                var exercicioSelecionado = $("#exercicioSelecionado").val() == "" ? 0 : $("#exercicioSelecionado").val();
+
+                if (exercicioSelecionado == 0) {
+                    showAlertMessage("Ops!", "Você deve selecionar um exercício válido antes de tentar incluir na Série!", AlertMsgTypesEnum.Warning);
+                    return;
+                }
+
+                var exercicioId = $('#exercicioSelecionado option:selected').val();
+                var exercicio = $('#exercicioSelecionado option:selected').text();
+                var numSeries = $('#numSeries').val();
+                var numReps = $('#numReps').val();
+                var observacao = $("#observacao").val();
+
+                var itemSerie = {
+                    index: sequencia,
+                    exercicioId: exercicioId,
+                    exercicio: exercicio,
+                    numSeries: numSeries,
+                    numReps: numReps,
+                    observacao: observacao
+                };
+
+                exercisesArray.push(itemSerie);
+
+                incluir_linha_produto(exercicio, numSeries, numReps, exercicioID);
+
+                $("#grid").on("click", ".btnItemSerieRemove", function () {
+                    var id = $(this).closest("tr").attr("id");
+
+                    exercisesArray = exercisesArray.filter(x => {
+                        return x.index != id
+                    });
+
+                    $(this).closest("tr").remove();
+                });
+            });
+
+            $("#btnSubmit").on('click', function (e) {
+                e.preventDefault();
+
+                var ProfessorResponsavelId = $('#ProfessorResponsavelId').val();
+                var AlunoId = $('#AlunoId').val();
+
+                if (ProfessorResponsavelId == "" || AlunoId == "") {
+                    showAlertMessage("Ops!", "Você deve selecionar o professor responsável e o aluno antes de cadastrar!", AlertMsgTypesEnum.Warning);
+                    return;
+                }
+
+                if (exercisesArray.length == 0) {
+                    showAlertMessage("Ops!", "Você deve inserir pelo menos 1 exercício na Série do Aluno!", AlertMsgTypesEnum.Warning);
+                    return;
+                }
+
+
+                var viewModel = {
+                    ProfessorResponsavelId: ProfessorResponsavelId,
+                    AlunoId: AlunoId,
+                    ItensSerie: JSON.stringify(exercisesArray)
+                };
+
+                var url = $(this).data('url');
+
+                $.post(url, add_anti_forgery_token(viewModel), function (response) {
+                    if (response.OK) {
+                        swal('Sucesso', 'Nova Série cadastrada com sucesso.', 'info');
+                    }
+                })
+                .fail(function () {
+                    swal('Aviso', 'Não foi possível cadastrar a série do aluno.', 'warning');
+                });
+            });
+        });
+    </script>
+    <script id="template-serie" type="x-tmpl-mustache">
+        <tr id="{{ Sequencia }}">
+            <td>
+                <span id="txt_exercicio_{{ Sequencia }}">{{ Exercicio }}</span>
+            </td>
+            <td>
+                <span id="txt_numseries_{{ Sequencia }}">{{ NumSeries }}</span>
+            </td>
+            <td>
+                <span id="txt_numreps_{{ Sequencia }}">{{ NumReps }}</span>
+            </td>
+            <td>
+                <a class="btn btn-danger btnItemSerieRemove">
+                    <i class="fas fa-trash"></i>
+                </a>
+            </td>
+        </tr>
+    </script>
+    @*<script>
+        $(document).ready(function () {
+            if (@TempData["Created"] == true) {
+                toastr.success("Exercício adicionado com sucesso na Série.")
+            } else {
+                toastr.danger("Algo deu errado, tente novamente!")
+            }
+        });
+    </script>*@
+}
+@*@section Scripts{
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var id = 0;
+                $("#addExerciseButton").on('click', function (event) {
+                    event.preventDefault();
+                    var exercicio = $("#exercicioSelecionado").val();
+                    var numSeries = $("#numSeries").val();
+                    var numReps = $("#numReps").val();
+                    var observacao = $("#observacao").val();
+
+                    $("#exercicio").val("");
+                    $("#numSeries").val(0);
+                    $("#numReps").val(0);
+                    $("#observacao").val("");
+
+                    $("#itemSerie").append(`<li class='list-group-item d-flex justify-content-between' id="itemSerie${id}"><div>${exercicio} - ${numSeries}x${numReps}</div> <i class="fas fa-trash itemTrash"></i></li>`);
+                    id++;
+                });
+                $(".itemTrash").on('click', function (event) {
+                    event.preventDefault();
+                })
+            });
+        </script>
+    }*@

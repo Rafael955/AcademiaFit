@@ -18,6 +18,8 @@ namespace AcademiaFit.Domain.Models.Aggregates
         public double Altura { get; set; }
         public string IMC { get; private set; }
         public double PercentualGordura { get; set; }
+        public double MassaMagra { get; set; }
+        public double MassaGorda { get; set; }
 
         #region Perimetros Corporais
         public double BracoEsquerdo { get; set; }

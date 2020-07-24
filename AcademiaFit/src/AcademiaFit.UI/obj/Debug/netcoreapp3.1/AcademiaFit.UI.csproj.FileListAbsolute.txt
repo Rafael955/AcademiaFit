@@ -123,8 +123,6 @@ C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\bin\Debug\netco
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\bin\Debug\netcoreapp3.1\AcademiaFit.Domain.pdb
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\bin\Debug\netcoreapp3.1\AcademiaFit.Domain.Services.pdb
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\obj\Debug\netcoreapp3.1\AcademiaFit.UI.csprojAssemblyReference.cache
-C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\obj\Debug\netcoreapp3.1\AcademiaFit.UI.csproj.CoreCompileInputs.cache
-C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\obj\Debug\netcoreapp3.1\AcademiaFit.UI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\obj\Debug\netcoreapp3.1\AcademiaFit.UI.RazorAssemblyInfo.cache
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\obj\Debug\netcoreapp3.1\AcademiaFit.UI.RazorAssemblyInfo.cs
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\obj\Debug\netcoreapp3.1\AcademiaFit.UI.AssemblyInfoInputs.cache
@@ -432,7 +430,10 @@ C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\bin\Debug\netco
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.Data.pdb
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.CrossCutting.dll
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\bin\Debug\netcoreapp3.1\AcademiaFit.Infrastructure.CrossCutting.pdb
-C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\obj\Debug\netcoreapp3.1\AcademiaFit.UI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\obj\Debug\netcoreapp3.1\Razor\Views\Professores\Cadastrar.cshtml.g.cs
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\obj\Debug\netcoreapp3.1\Razor\Views\Professores\_partialFormulario.cshtml.g.cs
 C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\obj\Debug\netcoreapp3.1\Razor\Views\Professores\CriarSerie.cshtml.g.cs
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\obj\Debug\netcoreapp3.1\Razor\Views\Professores\AdicionarItemSerie.cshtml.g.cs
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\obj\Debug\netcoreapp3.1\AcademiaFit.UI.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\obj\Debug\netcoreapp3.1\AcademiaFit.UI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user\Desktop\AcademiaFit\AcademiaFit\src\AcademiaFit.UI\obj\Debug\netcoreapp3.1\AcademiaFit.UI.MvcApplicationPartsAssemblyInfo.cache

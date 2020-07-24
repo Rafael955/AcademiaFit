@@ -1,3 +1,4 @@
+using AutoMapper;
 using AcademiaFit.Application.Interfaces;
 using AcademiaFit.Application.Services;
 using AcademiaFit.Domain.Interfaces.IRepository;
@@ -6,7 +7,6 @@ using AcademiaFit.Domain.Services;
 using AcademiaFit.Infrastructure.Data.AutoMapper;
 using AcademiaFit.Infrastructure.Data.Context;
 using AcademiaFit.Infrastructure.Data.Repository;
-using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -51,6 +51,12 @@ namespace AcademiaFit.UI
             services.AddScoped<IProfessorServiceApplication, ProfessorServiceApplication>();
             services.AddScoped<IProfessorServiceDomain, ProfessorServiceDomain>();
             services.AddScoped<IProfessorRepository, ProfessorRepository>();
+
+            services.AddScoped<ISerieServiceApplication, SerieServiceApplication>();
+            services.AddScoped<ISerieServiceDomain, SerieServiceDomain>();
+            services.AddScoped<ISerieRepository, SerieRepository>();
+
+            services.AddScoped<IExercicioRepository, ExercicioRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

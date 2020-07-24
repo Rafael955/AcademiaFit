@@ -1,5 +1,6 @@
 ﻿using AcademiaFit.Application.ViewModels;
 using AcademiaFit.Domain.Models;
+using AcademiaFit.Domain.Models.Aggregates.SerieAggregate;
 using AcademiaFit.Domain.Models.Entity;
 using AutoMapper;
 
@@ -31,7 +32,7 @@ namespace AcademiaFit.Infrastructure.Data.AutoMapper
                             UF = src.Endereco.UF
                         },
                         Nome = src.Nome,
-                        NomeCompleto = string.Concat(src.Nome," ",src.Sobrenome),
+                        NomeCompleto = string.Concat(src.Nome, " ", src.Sobrenome),
                         Sobrenome = src.Sobrenome,
                         Telefone = src.Telefone
                     };
@@ -65,7 +66,24 @@ namespace AcademiaFit.Infrastructure.Data.AutoMapper
                         Telefone = src.Telefone
                     };
                 });
+
+            CreateMap<Serie, SerieViewModel>()
+                .ConvertUsing((src, dst) =>
+                {
+                    return new SerieViewModel
+                    {
+                        Serie = new Serie
+                        {
+                            AlunoId = src.AlunoId,
+                            ProfessorResponsavelId = src.ProfessorResponsavelId
+                        }
+                    };
+                });
         }
     }
 }
+
+
+
+
 

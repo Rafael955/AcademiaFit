@@ -19,7 +19,7 @@ namespace AcademiaFit.Infrastructure.Data.Repository
         }
 
 
-        public Aluno DetalharPorNome(string busca)
+        public Aluno ObterAlunoPorNome(string busca)
         {
             throw new NotImplementedException();
         }
@@ -42,7 +42,7 @@ namespace AcademiaFit.Infrastructure.Data.Repository
         {
             return _context.Alunos.Select(x => new SelectListItem()
             {
-                Text = x.Nome,
+                Text = string.Concat(x.Nome, " ", x.Sobrenome),
                 Value = x.Id.ToString()
             });
         }

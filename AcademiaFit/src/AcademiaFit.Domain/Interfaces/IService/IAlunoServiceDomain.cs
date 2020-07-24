@@ -8,7 +8,7 @@ namespace AcademiaFit.Domain.Interfaces.IService
 {
     public interface IAlunoServiceDomain : IBaseServiceDomain<Aluno>
     {
-        Aluno DetalharPorNome(string busca);
+        Aluno ObterAlunoPorNome(string busca);
         IEnumerable<Aluno> ListarAlunosAtivos();
         IEnumerable<Aluno> ListarAlunosInadimplentes();
         IEnumerable<SelectListItem> ObterListaAlunosForDropDown();

@@ -20,7 +20,7 @@ namespace AcademiaFit.Infrastructure.Data.Repository
 
         public override IEnumerable<Professor> Listar()
         {
-            return _context.Set<Professor>().Include(x => x.Endereco).ToList();
+            return _context.Professores.Include(x => x.Endereco).ToList();
         }
 
         public IEnumerable<Professor> ListarAvaliacoesFisicasDoProfessor()
@@ -47,7 +47,7 @@ namespace AcademiaFit.Infrastructure.Data.Repository
         {
             return _context.Professores.Select(x => new SelectListItem()
             {
-                Text = x.Nome,
+                Text = string.Concat(x.Nome, " ", x.Sobrenome),
                 Value = x.Id.ToString()
             });
         }
